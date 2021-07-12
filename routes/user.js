@@ -11,7 +11,9 @@ router.get('/a', async (req, res) => {
   const { rows } = await db.query('SELECT s.ID, s.DATUM, MA.name, MAN.name as name2, s.ERGEBNIS FROM "Spiel" S INNER JOIN "Mannschaft2" MAN ON S.MANNSCHAFT2 = MAN.ID INNER JOIN "Mannschaft" MA ON S.MANNSCHAFT1 = MA.ID;')
   res.send({handball:rows})
 })
-router.get('/b', async (req, res) => {
+
+// Platz für weiter Abfrgaen
+router.get('/', async (req, res) => {
   
     const { rows } = await db.query('SELECT s.ID, s.DATUM, MA.name, MAN.name as name2, s.ERGEBNIS FROM "Spiel" S INNER JOIN "Mannschaft2" MAN ON S.MANNSCHAFT2 = MAN.ID INNER JOIN "Mannschaft" MA ON S.MANNSCHAFT1 = MA.ID;')
     res.send({handball:rows})

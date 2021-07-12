@@ -67,7 +67,7 @@ CREATE TABLE "Bewertungsbogen" (
 
 
 CREATE TABLE "Stadt" (
-	"id" int(60) NOT NULL,
+	"id" int NOT NULL,
 	"name" varchar(60) NOT NULL,
 	CONSTRAINT "Stadt_pk" PRIMARY KEY ("id")
 ) WITH (
