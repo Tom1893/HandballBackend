@@ -254,7 +254,6 @@ CREATE TABLE "BetretenTorraum" (
 	"be/uebertreten" BOOLEAN,
 	"abwehrarbeitTR" BOOLEAN,
 	"abstehen" BOOLEAN,
-	"hinterlaufenTR" BOOLEAN,
 	CONSTRAINT "BetretenTorraum_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
